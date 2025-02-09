@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js のサンプル</title>
+  <!-- 正しい Vue 3 の CDN URL -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45"></script>
+</head>
+<body>
+  <h1>Vue3</h1>
+  <div id="app">
+    {{ message }}
+  </div>
+  <script>
+    const appdata = {
+      data() {
+        return {
+          message: "Hello Vue"
+        };
+      }
+    };
+
+    // Vue アプリケーションの作成とマウント
+    Vue.createApp(appdata).mount('#app');
+  </script>
+</body>
+</html>
